@@ -1,16 +1,54 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.grid{
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3,1fr);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.square{
+  width: 200px;
+  height: 200px;
+  font-size: 5rem;
+  border: solid 2px rgb(255, 251, 0);
+  font-size: 8rem;
+  font-weight: bold;
+  background-color: darkcyan;
 }
 
-* {
-  box-sizing: border-box;
+.square_o{
+  background-color: blue;
+  color: white;
+}
+
+.square_x{
+  background-color: red;
+  color: white;
+}
+
+.title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0 0 20px 0;
+}
+
+p{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0 0 20px 0;
+  color: coral;
+}
+
+.reset{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.reset button {
+  background-color: darkgray;
+  padding: 15px 30px 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
 }
